@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 export const Add = () => {
     const [description,setDesc]=useState();
-    const [transaction,setTrans]=useState();
+    const [transactionAmount,setTrans]=useState();
 
   return (
     <div>
@@ -18,7 +18,7 @@ export const Add = () => {
                 <label htmlFor='teansactionamount' >
                     Transaction Amount
                 </label>
-                <input type="number" id="transactionamount" placeholder='Transaction amount' value={transaction} onChange={ (e) => setTrans(e.target.value) } />
+                <input type="number" id="transactionamount" placeholder='Transaction amount' value={transactionAmount} onChange={ (e) => setTrans(e.target.value) } />
             </div>
             <button className='btn' >Add transaction</button>
         </form>
